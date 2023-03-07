@@ -31,6 +31,7 @@ router.post(
  * @route Get api/users/:userId
  * @description getTasks for a user
  * @access private
+ * @requireParams userId
  */
 
 router.get(
@@ -93,7 +94,7 @@ router.put(
  * @description assign or unassign a user in a task
  * @access public
  * @requiredParams tasksID
- * @requiredBody userId
+ * @requiredBody isAssign, assignees Array
  */
 router.put(
   "/assignment/:taskId",
@@ -103,7 +104,7 @@ router.put(
 );
 /**
  * @route DELETE api/tasks/:taskId
- * @description hide a task
+ * @description isDeleted = true
  * @access private
  * @requiredParams tasksID
  */
