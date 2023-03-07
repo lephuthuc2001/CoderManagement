@@ -72,7 +72,7 @@ router.get(
 
 router.get(
   "/tasks/:taskId",
-  tasksController.validateTaskId,
+  ...tasksController.validateTaskId,
   tasksController.getTaskById
 );
 
