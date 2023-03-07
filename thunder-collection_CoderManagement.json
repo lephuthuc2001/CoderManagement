@@ -1,0 +1,167 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CoderManagement",
+    "dateExported": "2023-03-07T06:18:27.154Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b2ced262-7253-49cc-bdfa-1c10cc426afb",
+            "colId": "55ec4d04-3f9f-4fa9-b824-e000d555a466",
+            "containerId": "",
+            "name": "Get Users",
+            "url": "{{localApi}}/users?department=sales",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-06T06:27:15.776Z",
+            "modified": "2023-03-06T11:03:00.463Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "department",
+                    "value": "sales",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "7dbcacf8-f3bd-4f25-be1e-53e30a4a6410",
+            "colId": "55ec4d04-3f9f-4fa9-b824-e000d555a466",
+            "containerId": "",
+            "name": "POST create Users",
+            "url": "{{localApi}}/users",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-06T06:57:07.057Z",
+            "modified": "2023-03-07T03:50:07.028Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Lee Phu Thuc\",\n  \"department\":\"Tech\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3146dc43-9819-4607-8650-39bf1d6945cb",
+            "colId": "55ec4d04-3f9f-4fa9-b824-e000d555a466",
+            "containerId": "",
+            "name": "GET get tasks per users",
+            "url": "{{localApi}}/users/6406b3cb44eb969c57f745e8",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-03-06T08:19:43.918Z",
+            "modified": "2023-03-07T05:54:13.635Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b6cb84ba-6324-4908-84a4-f9c10d592fba",
+            "colId": "55ec4d04-3f9f-4fa9-b824-e000d555a466",
+            "containerId": "",
+            "name": "POST create  new task",
+            "url": "{{localApi}}/tasks",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-06T10:20:02.285Z",
+            "modified": "2023-03-06T11:11:23.520Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Throw a big party\",\n  \"description\":\"Buy BBQ sauce and Invite staff members\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3ec0138f-435e-4e11-9bbc-947838c2df92",
+            "colId": "55ec4d04-3f9f-4fa9-b824-e000d555a466",
+            "containerId": "",
+            "name": "GET tasks per status,name ...",
+            "url": "{{localApi}}/tasks?status=pending",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-03-06T11:00:25.225Z",
+            "modified": "2023-03-07T03:14:12.438Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "status",
+                    "value": "pending",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "a042235f-3001-42d3-9277-d82f2cd059f3",
+            "colId": "55ec4d04-3f9f-4fa9-b824-e000d555a466",
+            "containerId": "",
+            "name": "GET task by id",
+            "url": "{{localApi}}/tasks/6406b394aeba7a59e816a165",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-03-06T11:20:26.355Z",
+            "modified": "2023-03-07T05:11:37.004Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a22e0e68-5b3c-4fdd-9837-c0db095fed4f",
+            "colId": "55ec4d04-3f9f-4fa9-b824-e000d555a466",
+            "containerId": "",
+            "name": "PUT update taskStatus",
+            "url": "{{localApi}}/tasks/6406b394aeba7a59e816a170",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-03-07T03:13:17.619Z",
+            "modified": "2023-03-07T04:16:27.575Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\":\"done\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3b048de3-2878-4b0d-b6a8-243157b3102f",
+            "colId": "55ec4d04-3f9f-4fa9-b824-e000d555a466",
+            "containerId": "",
+            "name": "Delete Task by ID",
+            "url": "{{localApi}}/tasks/6406b394aeba7a59e816a170",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-03-07T04:22:47.115Z",
+            "modified": "2023-03-07T04:23:10.211Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "72ba19f6-77d5-45b8-bd60-0a63c2522e35",
+            "colId": "55ec4d04-3f9f-4fa9-b824-e000d555a466",
+            "containerId": "",
+            "name": "PUT assign tasks",
+            "url": "{{localApi}}/assignment/6406b394aeba7a59e816a165",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2023-03-07T04:45:56.613Z",
+            "modified": "2023-03-07T06:18:13.400Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"isAssign\":true,\n  \"assignees\":[\"6406b3cb44eb969c57f745e6\",\"6406b3cb44eb969c57f745cc\"]\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
